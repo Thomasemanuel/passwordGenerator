@@ -7,12 +7,12 @@ var lowercase = 'abcdefghijklmnopqrstuvwxyz';
 var UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var numerical = '012345678'
 var special = '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~';
-var passwordCharacters =""
+
 
 
 // create prompts for after button press
 var generatePassword = function(){
-
+  var passwordCharacters =""
 //user input character length
 var passwordLength =window.prompt("Please input character length (8-128).")
   if (passwordLength <= 7||passwordLength >= 129)  {
