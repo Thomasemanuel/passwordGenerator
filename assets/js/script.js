@@ -62,6 +62,7 @@ var specialPrompt =  window.confirm("Do you want to include special characters? 
 console.log(passwordLength, lowercasePrompt, UPPERCASEPrompt,numericalPrompt,specialPrompt);
 console.log( lowercase, UPPERCASE, numerical, special);
 console.log(passwordCharacters);
+console.log(password);
 // check if atleast one set of characters were selected
   if (passwordCharacters ===""|| passwordCharacters===null){
         window.alert("You need to select atleast one character set to include in the password.");
@@ -73,8 +74,10 @@ console.log(passwordCharacters);
           for (var i = 0; i<= passwordLength; i++){
           var characters = Math.floor(Math.random()* passwordCharacters.length);
           password += passwordCharacters.substring(characters, characters +1 );
+          console.log(password);
           }
           return password;
+         
       }
       
 };
