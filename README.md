@@ -1,4 +1,5 @@
 # Password Generator
+
 ## Given the starter code I had to:
 Create the javascript to generate a password. Upon clicking the generate password button this will happen in this order.
 1. Prompt the user to give password length from 8-128 characters.
