@@ -5,7 +5,7 @@ var generateBtn = document.querySelector("#generate");
 // different characters
 var lowercase = 'abcdefghijklmnopqrstuvwxyz';
 var UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var numerical = '012345678'
+var numerical = '0123456789'
 var special = '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~';
 
 
@@ -15,10 +15,20 @@ var generatePassword = function(){
   var passwordCharacters =""
 //user input character length
 var passwordLength =window.prompt("Please input character length (8-128).")
-  if (passwordLength <= 7||passwordLength >= 129)  {
+//check for text entry and reject
+  if (isNaN(passwordLength)){
     alert ("Please input an integer from 8-128.")
     generatePassword();
+//check for 8-128
+  }else if (passwordLength <= 7||passwordLength >= 129)  {
+    alert ("Please input an integer from 8-128.")
+    generatePassword();
+// check for null entry
+  }else if (passwordLength === "" || passwordLength === null) {
+      window.alert("You need to provide a valid answer! Please try again.");
+      return fightOrSkip();
   }
+  
   //user confirms all that apply 
 
 var lowercasePrompt =  window.confirm("Do you want to include lowercase letters? ");
