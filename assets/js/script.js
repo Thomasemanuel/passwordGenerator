@@ -34,39 +34,39 @@ var passwordLength =window.prompt("Please input character length (8-128).")
 var lowercasePrompt =  window.confirm("Do you want to include lowercase letters? ");
     //alerts to show user their input
     if(lowercasePrompt === true){   
-        window.alert("You have selected to include lowercase letters");
+        window.alert("You have selected to include lowercase letters.");
         //add string to characters
         passwordCharacters= passwordCharacters + lowercase;
         //if they select cancel
       }else {
-        window.alert("Your password will not include lowercase letters");
+        window.alert("Your password will not include lowercase letters.");
       }
 
 var UPPERCASEPrompt = window.confirm("Do you want to include UPPERCASE letters? ");
   //alerts to show user their input  
     if(UPPERCASEPrompt=== true){  
-        window.alert("You have selected to include UPPERCASE letters");
+        window.alert("You have selected to include UPPERCASE letters.");
         passwordCharacters= passwordCharacters + UPPERCASE;
       }else {
-        window.alert("Your password will not include UPPERCASE letters");
+        window.alert("Your password will not include UPPERCASE letters.");
       }
 
 var numericalPrompt =  window.confirm("Do you want to include numerical characters? ");
     //alerts to show user their input 
     if(numericalPrompt === true){  
-        window.alert("You have selected to include numerical character");
+        window.alert("You have selected to include numerical characters.");
         passwordCharacters = passwordCharacters + numerical;
       }else {
-        window.alert("Your password will not include numerical character");
+        window.alert("Your password will not include numerical characters.");
       }
 
 var specialPrompt =  window.confirm("Do you want to include special characters? ");
       //alerts to show user their input
       if(specialPrompt=== true){  
-        window.alert("You have selected to include special letters");
+        window.alert("You have selected to include special characters.");
         passwordCharacters= passwordCharacters + special;
       }else {
-        window.alert("Your password will not include special letters");
+        window.alert("Your password will not include special characters.");
       }
     
 console.log(passwordLength, lowercasePrompt, UPPERCASEPrompt,numericalPrompt,specialPrompt);
