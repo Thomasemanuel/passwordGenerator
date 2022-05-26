@@ -18,7 +18,7 @@ A website built to generate random passwords following user criteria.
 * JS
 
 ## Website
-https://thomasemanuel.github.io/te-challenge3-passwordGenerator/
+https://thomasemanuel.github.io/passwordGenerator/
 
 ![Here is a screenshot of the deployed website. User input was 12 characters and only use numeric characters.](./assets/images/webpage.png)
 
