@@ -5,7 +5,7 @@ var generateBtn = document.querySelector("#generate");
 // different characters
 var lowercase = 'abcdefghijklmnopqrstuvwxyz';
 var UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var numerical = '012345678'
+var numerical = '0123456789'
 var special = '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~';
 
 
